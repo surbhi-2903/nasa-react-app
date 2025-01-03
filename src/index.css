@@ -22,6 +22,7 @@
 .imgContainer{
   display: flex;
   flex-direction: column;
+  max-height: 100vh;
 }
 #root{
   min-height: 100vh;
@@ -85,11 +86,6 @@ footer button:hover{
   display: flex;
   flex-direction: column;
   z-index: 10;
-  width: 90%;
-  max-width: 800px;
-  margin-left: auto;
-
-  /* transition: all 0.5s ease; */
 }
 
 .bgOverLay{
@@ -109,7 +105,9 @@ footer button:hover{
   padding: 1rem;
   overflow-y: scroll;
   height: 100%;
-  width: 100%;
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
   background-color: #030615;
   scrollbar-width: none;
 }
@@ -169,9 +167,11 @@ button:hover{
     position: relative;
     inset: unset;
     min-width: 30%;
+    max-height: 100vh;
     box-shadow: 0 0 40px 1px #030615;
   }
   .sidebarContents{
     margin: unset;
+    width: 100%;
   }
 }
